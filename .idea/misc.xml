@@ -15,6 +15,9 @@
         <option value="$PROJECT_DIR$/config-client/pom.xml" />
         <option value="$PROJECT_DIR$/service-zipkin/pom.xml" />
         <option value="$PROJECT_DIR$/service-mimi/pom.xml" />
+        <option value="$PROJECT_DIR$/service_hystrixlucy/pom.xml" />
+        <option value="$PROJECT_DIR$/service_hystrixhi/pom.xml" />
+        <option value="$PROJECT_DIR$/service-turbine/pom.xml" />
       </list>
     </option>
   </component>

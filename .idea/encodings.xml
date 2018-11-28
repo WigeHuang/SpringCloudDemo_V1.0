@@ -5,12 +5,14 @@
     <file url="file://$PROJECT_DIR$/config-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/erureka_server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hystrix_dashboard" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/serice-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-mimi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-ribbon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-turbine" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-zipkin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-zuul" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service_hi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service_hystrixhi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service_hystrixlucy" charset="UTF-8" />
   </component>
 </project>

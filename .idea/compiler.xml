@@ -13,9 +13,12 @@
         <module name="serice-feign" />
         <module name="service-mimi" />
         <module name="service-ribbon" />
+        <module name="service-turbine" />
         <module name="service-zipkin" />
         <module name="service-zuul" />
         <module name="service_hi" />
+        <module name="service_hystrixhi" />
+        <module name="service_hystrixlucy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -36,9 +39,12 @@
       <module name="service-hi" options="-parameters" />
       <module name="service-mimi" options="-parameters" />
       <module name="service-ribbon" options="-parameters" />
+      <module name="service-turbine" options="-parameters" />
       <module name="service-zipkin" options="-parameters" />
       <module name="service-zuul" options="-parameters" />
       <module name="service_hi" options="-parameters" />
+      <module name="service_hystrixhi" options="-parameters" />
+      <module name="service_hystrixlucy" options="-parameters" />
     </option>
   </component>
 </project>
