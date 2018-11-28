@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: peer1
+spring:
+  application:
+    name: eurka-server
