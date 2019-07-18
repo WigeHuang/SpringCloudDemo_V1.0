@@ -1,0 +1,53 @@
+version: '3'
+
+services:
+
+  zalenium:
+    image: "dosel/zalenium"
+    restart: always
+    tty: true
+    volumes:
+      - /tmp/videos:/home/seluser/videos
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /usr/bin/docker:/usr/bin/docker
+    ports:
+      - 4445:4444
+    command: >
+      start --desiredContainers 2
+            --maxDockerSeleniumContainers 8
+            --screenWidth 800 --screenHeight 600
+            --timeZone "Asia/Shanghai"
+            --videoRecordingEnabled true
+            --sauceLabsEnabled false
+            --browserStackEnabled false
+            --testingBotEnabled false
+            --startTunnel false
+    environment:
+      - HOST_UID
+      - HOST_GID
+      - SAUCE_USERNAME
+      - SAUCE_ACCESS_KEY
+      - BROWSER_STACK_USER
+      - BROWSER_STACK_KEY
+      - TESTINGBOT_KEY
+      - TESTINGBOT_SECRET
+
+  db:
+    image: postgres:11
+    restart: always
+    ports:
+      - 10402:5432
+    volumes:
+      - /data/serv/east/pg:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: scraper
+      POSTGRES_PASSWORD: 68368
+      POSTGRES_DB: east
+
+  adminer:
+    image: adminer:4.7
+    restart: always
+    ports:
+      - 8083:8080
+    depends_on:
+      - db
